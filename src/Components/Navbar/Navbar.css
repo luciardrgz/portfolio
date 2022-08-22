@@ -1,0 +1,53 @@
+/* Wrapper */
+.n-wrapper {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Left side */
+.n-left {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+}
+
+/* My name on the left side */
+.n-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* Right side */
+.n-right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  /*font-weight: 400;*/
+}
+
+/* List in general */
+.n-list {
+  flex: 10;
+}
+
+/* Unordered list*/
+.n-list > ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+}
+
+/* Each ul item hover*/
+.n-list > ul > li:hover {
+  cursor: pointer;
+  color: var(--orange);
+}
+
+.n-button {
+  font-weight: 500;
+  flex: 3;
+  width: 8rem;
+}
