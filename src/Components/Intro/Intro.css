@@ -85,11 +85,11 @@
   left: -3rem;
 }
 
-/* Boy */
+/* My picture */
 .i-right > :nth-child(3) {
-  transform: scale(1.4);
-  rotate: -3deg;
-  left: 18%;
+  transform: scale(0.4);
+  bottom: 1%;
+  right: 10%;
 }
 
 .i-right > :nth-child(4) {
