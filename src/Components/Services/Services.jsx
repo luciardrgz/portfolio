@@ -30,8 +30,15 @@ const Services = () => {
         <a
           href="https://drive.google.com/drive/folders/1t16MIT-lSRWpcpvIx13h9DijOSkazQND?usp=sharing"
           target="_BLANK"
+          rel="noreferrer"
         >
-          <button className="button s-button">See my CV</button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="button s-button"
+          >
+            See my CV
+          </motion.button>
         </a>
       </div>
 

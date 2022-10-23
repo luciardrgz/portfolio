@@ -48,7 +48,8 @@
   outline: none;
   border: 2px solid var(--purple);
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 textarea {
@@ -58,6 +59,12 @@ textarea {
 .c-blur1 {
   top: 1rem;
   left: 8rem;
+}
+
+.send-button {
+  font-weight: bold;
+  width: 7rem;
+  height: 2rem;
 }
 
 @media screen and (max-width: 480px) {

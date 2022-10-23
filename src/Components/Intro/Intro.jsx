@@ -4,11 +4,10 @@ import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import fotoCV from "../../img/fotoCV.png";
 import SmileEmoji from "../../img/smile.png";
 import Rushpin from "../../img/rushpin.png";
 import CV from "../../img/cv.png";
-import glassesimoji from "../../img/glassesimoji.png";
+import glassesEmoji from "../../img/glassesEmoji.png";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
@@ -24,8 +23,10 @@ const Intro = () => {
     <div className="intro" id="Home">
       <div className="i-left">
         <div className="i-name">
-          <span style={{ color: darkMode ? "white" : "" }}>Hi! I am</span>
-          <span>Lucia Rodriguez</span>
+          <span style={{ color: darkMode ? "white" : "" }}>
+            Hi! Hope you're doing well
+          </span>
+          <span>I'm Lucia Rodriguez</span>
           <span style={{ color: darkMode ? "darkGray" : "" }}>
             Backend Developer with knowledge in Java + SpringBoot and Relational
             Databases
@@ -58,12 +59,11 @@ const Intro = () => {
       <div className="i-right">
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
-        <img src={fotoCV} id="fotoCV" alt="" />
         <motion.img
           initial={{ left: "-36%" }}
-          whileInView={{ left: "-24%" }}
+          whileInView={{ left: "-13%" }}
           transition={transition}
-          src={glassesimoji}
+          src={glassesEmoji}
           alt=""
         />
 
@@ -87,7 +87,7 @@ const Intro = () => {
           <FloatingDiv
             image={SmileEmoji}
             txt1="Also managed C,"
-            txt2="PHP and JavaScript"
+            txt2="PHP and JS"
           />
         </motion.div>
 

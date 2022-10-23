@@ -12,8 +12,13 @@ const Footer = () => {
         <span>If you made it this far down, thank you for doing so 💚</span>
 
         <div className="f-icons">
-          <Linkedin color="white" size="3rem" />
-          <Github color="white" size="3rem" />
+          <a href="https://www.linkedin.com/in/luciardrgz/">
+            <Linkedin color="white" size="3rem" />
+          </a>
+
+          <a href="https://github.com/luciardrgz">
+            <Github color="white" size="3rem" />
+          </a>
         </div>
       </div>
     </div>

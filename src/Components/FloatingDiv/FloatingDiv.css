@@ -7,6 +7,7 @@
   align-items: center;
   padding: 0px 28px 0px 0px;
   height: 4.5rem;
+  width: 12rem;
 }
 
 .floatingdiv > img {
@@ -14,6 +15,7 @@
 }
 
 .floatingdiv > span {
+  font-weight: bold;
   font-family: Montserrat;
   font-size: 16px;
   color: black;

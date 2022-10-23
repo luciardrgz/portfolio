@@ -12,7 +12,7 @@ const Card = ({ emoji, heading, detail, btnLink }) => {
       <span style={{ color: darkMode ? "white" : "" }}>{heading}</span>
       <span style={{ color: darkMode ? "white" : "" }}>{detail}</span>
 
-      <a href={btnLink} className="c-button">
+      <a href={btnLink} target="_BLANK" rel="noreferrer" className="c-button">
         Take a look
       </a>
     </div>
