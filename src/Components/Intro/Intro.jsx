@@ -5,8 +5,8 @@ import LinkedIn from "../../img/linkedin.png";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
 import fotoCV from "../../img/fotoCV.png";
-import thumbup from "../../img/thumbup.png";
-import Crown from "../../img/crown.png";
+import SmileEmoji from "../../img/smile.png";
+import Rushpin from "../../img/rushpin.png";
 import CV from "../../img/cv.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
@@ -26,16 +26,11 @@ const Intro = () => {
         <div className="i-name">
           <span style={{ color: darkMode ? "white" : "" }}>Hi! I am</span>
           <span>Lucia Rodriguez</span>
-          <span>Trainee Backend Developer with knowledge in C, Java</span>
+          <span style={{ color: darkMode ? "darkGray" : "" }}>
+            Backend Developer with knowledge in Java + SpringBoot and Relational
+            Databases
+          </span>
         </div>
-
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="button i-button"
-        >
-          Let's talk
-        </motion.button>
 
         <div className="i-icons">
           <a href="https://github.com/luciardrgz">
@@ -46,10 +41,18 @@ const Intro = () => {
             <img src={LinkedIn} alt="" />
           </a>
 
-          <a href="https://www.instagram.com/instagram/">
+          <a href="https://drive.google.com/drive/folders/1t16MIT-lSRWpcpvIx13h9DijOSkazQND?usp=sharing">
             <img src={CV} alt="" />
           </a>
         </div>
+
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="button i-button"
+        >
+          Let's talk!
+        </motion.button>
       </div>
 
       <div className="i-right">
@@ -71,7 +74,7 @@ const Intro = () => {
           style={{ top: "-4%", left: "68%" }}
           className="floating-div"
         >
-          <FloatingDiv image={Crown} txt1="Backend" txt2="Developer" />
+          <FloatingDiv image={Rushpin} txt1="Mar del Plata," txt2="Argentina" />
         </motion.div>
 
         <motion.div
@@ -81,7 +84,11 @@ const Intro = () => {
           style={{ top: "18rem", left: "0rem" }}
           className="floating-div"
         >
-          <FloatingDiv image={thumbup} txt1="Tengo" txt2="pasta dental" />
+          <FloatingDiv
+            image={SmileEmoji}
+            txt1="Also managed C,"
+            txt2="PHP and JavaScript"
+          />
         </motion.div>
 
         {/*Blurs*/}

@@ -16,9 +16,12 @@ const Portfolio = () => {
   return (
     <div className="portfolio" id="Portfolio">
       {/* Heading */}
-      <span style={{ color: darkMode ? "white" : "" }}>Recent projects</span>
-      <span>Portfolio</span>
-
+      <span style={{ color: darkMode ? "white" : "" }}></span>
+      <span>My Projects 🏗️</span> <br />
+      Soon you'll see them below, for now
+      <a href="https://github.com/luciardrgz">
+        you can find them clicking here
+      </a>
       {/*Slider*/}
       <Swiper
         spaceBetween={1}

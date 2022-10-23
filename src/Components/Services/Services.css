@@ -1,34 +1,38 @@
 .services {
   padding: 0 3rem 0 3rem;
   display: flex;
-  height: 90vh;
-  margin-bottom: 8rem;
-  margin-top: 9rem;
-  margin-bottom: 13rem;
+  height: 50vh;
+  margin-top: 7rem;
+  margin-bottom: 30rem;
 }
 
-.awesome {
+.doing {
+  margin-top: 300px;
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
-/* This is */
-.awesome > :nth-child(1) {
+/* This is what */
+.doing > :nth-child(1) {
   color: var(--black);
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-/* an example */
-.awesome > :nth-child(2) {
+/* I'm currently doing  */
+.doing > :nth-child(2) {
   color: var(--purple);
   font-size: 2.5rem;
   font-weight: bold;
 }
 
+.currentlyDoing {
+  line-height: 1.8rem;
+  text-align: justify;
+}
+
 /* Description */
-.awesome > :nth-child(3) {
+.doing > :nth-child(3) {
   width: 50rem;
   color: gray;
   font-style: 14px;
@@ -57,11 +61,6 @@
 .s-blur1 {
   left: -18rem;
   top: 13rem;
-}
-
-.currentlyDoing {
-  line-height: 1.8rem;
-  text-align: justify;
 }
 
 @media screen and (max-width: 480px) {

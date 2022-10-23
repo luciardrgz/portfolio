@@ -1,13 +1,12 @@
 import React from "react";
 import "./Services.css";
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png";
+import Studying from "../../img/studying.png";
+import GraphicD from "../../img/design.webp";
+import Camera from "../../img/camera.png";
 import Card from "../Card/Card";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
-import { textAlign } from "@mui/system";
 
 const Services = () => {
   const transition = { duration: 1, type: "spring" };
@@ -17,7 +16,7 @@ const Services = () => {
   return (
     <div className="services" id="Services">
       {/*Left side*/}
-      <div className="awesome">
+      <div className="doing">
         <span style={{ color: darkMode ? "white" : "" }}>This is what</span>
         <span>I'm currently doing!</span>
         <span className="currentlyDoing">
@@ -34,8 +33,6 @@ const Services = () => {
         >
           <button className="button s-button">See my CV</button>
         </a>
-
-        <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
 
       {/*Right side*/}
@@ -43,12 +40,12 @@ const Services = () => {
       <div className="cards">
         {/* 1st Card*/}
         <motion.div
-          initial={{ left: "20rem" }}
+          initial={{ top: "2rem", left: "20rem" }}
           whileInView={{ left: "15rem" }}
           transition={transition}
         >
           <Card
-            emoji={HeartEmoji}
+            emoji={Studying}
             heading={"Studying"}
             detail={
               "I love learning about everything, but above all I like technology and challenges, that's why I'm studying my last year of the University Programming Degree at UTN Mar del Plata."
@@ -66,10 +63,10 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={Glasses}
+            emoji={GraphicD}
             heading={"Designing"}
             detail={
-              "I'm not really into Frontend or UX/UI right now, but I enjoy using Corel Draw, Adobe software like Illustrator & Photoshop, and unleash my creativity to help others!"
+              "I'm not really into Frontend or UX/UI right now, but I do enjoy using Corel Draw, Adobe software as Illustrator, Premiere, Lightroom & Photoshop, and unleash my creativity to help others!"
             }
             btnLink={"https://www.instagram.com/driftdisenos/"}
           />
@@ -77,12 +74,12 @@ const Services = () => {
 
         {/*3rd Card*/}
         <motion.div
-          initial={{ top: "21rem", left: "20rem" }}
+          initial={{ top: "24rem", left: "20rem" }}
           whileInView={{ left: "15rem" }}
           transition={transition}
         >
           <Card
-            emoji={Humble}
+            emoji={Camera}
             heading={"Taking pictures or videos"}
             detail={
               "Photographing or filming for any occasion are things I used to do as a hobby, now I do it for money but I hope to take it up again as 'just-a hobby' soon :)"

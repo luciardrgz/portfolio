@@ -1,14 +1,13 @@
 import React from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+import Java from "../../img/java.png";
+import Springboot from "../../img/spring-boot.png";
+import Robot from "../../img/robot.png";
+import Ai from "../../img/ai.png";
+import MySQL from "../../img/mysql.png";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
-
 
 const Works = () => {
   const theme = useContext(themeContext);
@@ -16,19 +15,23 @@ const Works = () => {
   return (
     <div className="works">
       {/*Left Side*/}
-      <div className="awesome">
-        <span style={{ color: darkMode ? "white" : "" }}>Worked for All</span>
-        <span>of these Brands</span>
-        <span>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-          suscipit debitis tempore<br></br>
-          nobis atque, unde minus quisquam aspernatur aperiam ex corrupti eius
-          qui odit excepturi voluptatibus nihil quas blanditiissunt.
+      <div className="expect">
+        <span style={{ color: darkMode ? "white" : "" }}>
+          What I expect <br />
         </span>
-
-        <button className="button s-button">Contact me</button>
-
-        <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
+        <span>
+          for my future <br />
+        </span>
+        <span className="expectDescription">
+          🧠 I want to keep improving in Java, Springboot and MySQL — also
+          backend knowledge in general
+          <br />
+          🤖 I'd love to study and work in robotics and artificial intelligence
+          and/or cybersecurity!
+          <br />
+          ✈️ I plan to move to another country as soon as my seniority allows me
+          to do so.
+        </span>
       </div>
 
       {/*Right Side*/}
@@ -42,23 +45,23 @@ const Works = () => {
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src={Java} height="120px" alt="" />
           </div>
 
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={Springboot} height="100px" alt="" />
           </div>
 
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src={Robot} height="150px" alt="" />
           </div>
 
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src={Ai} height="120px" alt="" />
           </div>
 
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+            <img src={MySQL} height="120px" alt="" />
           </div>
         </motion.div>
 

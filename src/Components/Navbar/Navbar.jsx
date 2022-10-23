@@ -2,7 +2,6 @@ import React from "react";
 import Toggle from "../Toggle/Toggle";
 import ".//Navbar.css";
 import { Link } from "react-scroll";
-import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
@@ -24,19 +23,24 @@ const Navbar = () => {
             </Link>
 
             <Link spy={true} to="Services" smooth={true}>
-              <li>Services</li>
+              <li>Present</li>
             </Link>
 
             <Link spy={true} to="Experience" smooth={true}>
-              <li>Experiences</li>
+              <li>Future</li>
             </Link>
 
             <Link spy={true} to="Portfolio" smooth={true}>
-              <li>Portfolio</li>
+              <li>Projects</li>
             </Link>
 
+            {/*
             <Link spy={true} to="Testimonials" smooth={true}>
               <li>Testimonials</li>
+            </Link> --- Section that could be useful someday :)*/}
+
+            <Link spy={true} to="Contact" smooth={true}>
+              <li>Contact</li>
             </Link>
           </ul>
         </div>

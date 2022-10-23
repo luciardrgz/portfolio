@@ -35,9 +35,9 @@ const Testimonial = () => {
   return (
     <div className="t-wrapper" id="Testimonials">
       <div className="t-heading">
-        <span>Clients always get </span>
-        <span>exceptional work </span>
-        <span>from me...</span>
+        <span>This is a section that</span>
+        <span> could be useful</span>
+        <span> someday...</span>
 
         <div
           className="blur t-blur1"
