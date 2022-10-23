@@ -19,7 +19,7 @@
 }
 
 .t-heading span:nth-of-type(2) {
-  color: var(--orange);
+  color: var(--purple);
 }
 
 .t-blur1 {
@@ -42,7 +42,7 @@
   width: 30rem;
   height: 12rem;
   background: rgba(255, 255, 255, 0.26);
-  border: 7px solid var(--blueCard);
+  border: 7px solid var(--purple);
   box-shadow: var(--boxShadow);
   border-radius: 20px;
 }
@@ -72,5 +72,16 @@
 
 /*Slider bullets*/
 .t-wrapper .swiper-pagination-bullet-active {
-  background: var(--orange);
+  background: var(--purple);
+}
+
+@media screen and (max-width: 480px) {
+  .t-wrapper {
+    padding: 0;
+  }
+
+  .testimonial > img {
+    width: 70px;
+    height: 70px;
+  }
 }

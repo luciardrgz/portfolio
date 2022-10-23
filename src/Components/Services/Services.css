@@ -13,16 +13,16 @@
   position: relative;
 }
 
-/* My awesome */
+/* This is */
 .awesome > :nth-child(1) {
   color: var(--black);
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-/* services */
+/* an example */
 .awesome > :nth-child(2) {
-  color: var(--orange);
+  color: var(--purple);
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -57,4 +57,29 @@
 .s-blur1 {
   left: -18rem;
   top: 13rem;
+}
+
+.currentlyDoing {
+  line-height: 1.8rem;
+  text-align: justify;
+}
+
+@media screen and (max-width: 480px) {
+  .services {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 66rem;
+    padding: 0;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 17rem;
+  }
+
+  .cards > * {
+    position: static;
+  }
 }

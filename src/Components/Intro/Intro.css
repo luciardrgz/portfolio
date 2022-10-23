@@ -26,7 +26,7 @@
 
 /* Name (Name's 2nd child)*/
 .i-name > :nth-child(2) {
-  color: var(--orange);
+  color: var(--purple);
   font-weight: bold;
   font-size: 3rem;
 }
@@ -71,14 +71,14 @@
   z-index: 1;
 }
 
-/* Blue liquid */
+/* White liquid */
 .i-right > :nth-child(1) {
   transform: scale(0.69);
   left: -15%;
   top: -9%;
 }
 
-/* Yellow liquid */
+/* Purple liquid */
 .i-right > :nth-child(2) {
   top: -4.6rem;
   transform: scale(0.67);
@@ -87,9 +87,9 @@
 
 /* My picture */
 .i-right > :nth-child(3) {
-  transform: scale(0.4);
-  bottom: 1%;
-  right: 10%;
+  transform: scale(0.7);
+  bottom: 22%;
+  right: 21%;
 }
 
 .i-right > :nth-child(4) {
@@ -110,4 +110,22 @@
   top: -18%;
   left: 56%;
   filter: blur(72px);
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    flex-direction: column;
+    height: 64rem;
+    gap: 7rem;
+  }
+  .i-right {
+    transform: scale(0.8);
+    left: -3rem;
+  }
+  .i-right .blur {
+    display: none;
+  }
+  .floating-div:nth-of-type(1) {
+    top: -7rem !important;
+  }
 }

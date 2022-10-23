@@ -4,24 +4,35 @@ import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Card from "../Card/Card";
-import CVLuciaRodriguez_EN from "../../Components/CVLuciaRodriguez_EN.pdf";
+import { themeContext } from "../../Context";
+import { useContext } from "react";
+import { motion } from "framer-motion";
+import { textAlign } from "@mui/system";
 
 const Services = () => {
+  const transition = { duration: 1, type: "spring" };
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div className="services">
+    <div className="services" id="Services">
       {/*Left side*/}
       <div className="awesome">
-        <span>This is</span>
-        <span>an example</span>
-        <span>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-          suscipit debitis tempore nobis atque, unde minus quisquam aspernatur
-          aperiam ex corrupti eius qui odit excepturi voluptatibus nihil quas
-          blanditiis sunt.
+        <span style={{ color: darkMode ? "white" : "" }}>This is what</span>
+        <span>I'm currently doing!</span>
+        <span className="currentlyDoing">
+          🤓 Study backend programming at University and play a bit with
+          frontend on my own <br />
+          💸 Earning money with design, photography & filmmaking <br />
+          👩🏻‍💻 Aiming to get my first job as a developer as soon as I finish
+          college this year.
         </span>
 
-        <a href={CVLuciaRodriguez_EN} download>
-          <button className="button s-button">Download CV</button>
+        <a
+          href="https://drive.google.com/drive/folders/1t16MIT-lSRWpcpvIx13h9DijOSkazQND?usp=sharing"
+          target="_BLANK"
+        >
+          <button className="button s-button">See my CV</button>
         </a>
 
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
@@ -31,38 +42,59 @@ const Services = () => {
       {/* CARDS */}
       <div className="cards">
         {/* 1st Card*/}
-        <div style={{ left: "14rem" }}>
+        <motion.div
+          initial={{ left: "20rem" }}
+          whileInView={{ left: "15rem" }}
+          transition={transition}
+        >
           <Card
             emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop"}
-          />
-        </div>
-
-        {/*2nd Card*/}
-        <div style={{ top: "12rem", left: "-4rem" }}>
-          <Card
-            emoji={Glasses}
-            heading={"Developer"}
-            detail={"HTML, Css, Javascript"}
-          />
-        </div>
-
-        {/*3rd Card*/}
-        <div style={{ top: "19rem", left: "12rem" }}>
-          <Card
-            emoji={Humble}
-            heading={"UI/UX"}
+            heading={"Studying"}
             detail={
-              "Lorem ipsum dummy text are usually used in sections where I don't know what to write"
+              "I love learning about everything, but above all I like technology and challenges, that's why I'm studying my last year of the University Programming Degree at UTN Mar del Plata."
+            }
+            btnLink={
+              "https://mdp.utn.edu.ar/tecnicatura/tecnico_universitario_en_programacion/"
             }
           />
-        </div>
+        </motion.div>
+
+        {/*2nd Card*/}
+        <motion.div
+          initial={{ left: "-9rem", top: "12rem" }}
+          whileInView={{ left: "-4rem" }}
+          transition={transition}
+        >
+          <Card
+            emoji={Glasses}
+            heading={"Designing"}
+            detail={
+              "I'm not really into Frontend or UX/UI right now, but I enjoy using Corel Draw, Adobe software like Illustrator & Photoshop, and unleash my creativity to help others!"
+            }
+            btnLink={"https://www.instagram.com/driftdisenos/"}
+          />
+        </motion.div>
+
+        {/*3rd Card*/}
+        <motion.div
+          initial={{ top: "21rem", left: "20rem" }}
+          whileInView={{ left: "15rem" }}
+          transition={transition}
+        >
+          <Card
+            emoji={Humble}
+            heading={"Taking pictures or videos"}
+            detail={
+              "Photographing or filming for any occasion are things I used to do as a hobby, now I do it for money but I hope to take it up again as 'just-a hobby' soon :)"
+            }
+            btnLink={"https://www.instagram.com/_fotosporquesi/"}
+          />
+        </motion.div>
 
         {/*Background blur*/}
         <div
           className="blur s-blur2"
-          style={{ background: "var(--purple)" }}
+          style={{ background: "var(--white)" }}
         ></div>
       </div>
     </div>

@@ -22,7 +22,7 @@
 /* 2nd Span of every achievement */
 .achievement span:nth-of-type(2) {
   font-weight: bold;
-  color: orange;
+  color: var(--purple);
 }
 
 .circle {
@@ -38,6 +38,7 @@
   font-weight: bold;
   margin-bottom: 2rem;
   font-weight: 800;
+  color: black;
 }
 
 .circle::before {
