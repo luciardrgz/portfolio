@@ -25,7 +25,6 @@
   flex: 1;
   align-items: center;
   justify-content: center;
-  /*font-weight: 400;*/
 }
 
 /* List in general */
@@ -40,18 +39,12 @@
   gap: 2rem;
   margin-right: 4rem;
   cursor: pointer;
+  font-weight: bold;
 }
 
-/* Each ul item hover*/
-.n-list > ul > li:hover {
-  cursor: pointer;
+.n-list a:hover {
+  font-weight: bold;
   color: var(--purple);
-}
-
-.n-button {
-  font-weight: 500;
-  flex: 3;
-  width: 8rem;
 }
 
 @media screen and (max-width: 480px) {

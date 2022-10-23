@@ -19,7 +19,7 @@ const Navbar = () => {
               smooth={true}
               activeClass="activeClass"
             >
-              <li>Home</li>
+              <li> Home</li>
             </Link>
 
             <Link spy={true} to="Services" smooth={true}>

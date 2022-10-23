@@ -13,15 +13,11 @@ const Works = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="works">
+    <div className="works" id="Present">
       {/*Left Side*/}
       <div className="expect">
-        <span style={{ color: darkMode ? "white" : "" }}>
-          What I expect <br />
-        </span>
-        <span>
-          for my future <br />
-        </span>
+        <span style={{ color: darkMode ? "white" : "" }}>What I hope</span>
+        <span>for my future</span>
         <span className="expectDescription">
           🧠 I want to keep improving in Java, Springboot and MySQL — also
           backend knowledge in general

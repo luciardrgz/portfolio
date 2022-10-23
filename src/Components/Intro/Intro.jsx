@@ -23,13 +23,10 @@ const Intro = () => {
     <div className="intro" id="Home">
       <div className="i-left">
         <div className="i-name">
-          <span style={{ color: darkMode ? "white" : "" }}>
-            Hi! Hope you're doing well
-          </span>
-          <span>I'm Lucia Rodriguez</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Hi there! I'm</span>
+          <span>Lucia Rodriguez</span>
           <span style={{ color: darkMode ? "darkGray" : "" }}>
-            Backend Developer with knowledge in Java + SpringBoot and Relational
-            Databases
+            Backend Student with knowledge in Java + SpringBoot and MySQL
           </span>
         </div>
 
@@ -74,7 +71,17 @@ const Intro = () => {
           style={{ top: "-4%", left: "68%" }}
           className="floating-div"
         >
-          <FloatingDiv image={Rushpin} txt1="Mar del Plata," txt2="Argentina" />
+          <a
+            href="https://goo.gl/maps/tL8q6JMy55MJKYX68"
+            target="_BLANK"
+            rel="noreferrer"
+          >
+            <FloatingDiv
+              image={Rushpin}
+              txt1="Mar del Plata,"
+              txt2="Argentina"
+            />
+          </a>
         </motion.div>
 
         <motion.div

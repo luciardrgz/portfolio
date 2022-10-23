@@ -26,17 +26,13 @@
   font-weight: bold;
 }
 
-.currentlyDoing {
-  line-height: 1.8rem;
-  text-align: justify;
-}
-
 /* Description */
-.doing > :nth-child(3) {
+.currentlyDoing {
   width: 50rem;
   color: gray;
   font-style: 14px;
   margin-top: 1rem;
+  line-height: 1.8rem;
 }
 
 .s-button {

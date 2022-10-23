@@ -27,15 +27,17 @@
 
 /* Name (Name's 2nd child)*/
 .i-name > :nth-child(2) {
+  margin-top: -15px;
   color: var(--purple);
   font-weight: bold;
-  font-size: 3.8rem;
+  font-size: 4.2rem;
 }
 
 /* Description (Name's 3rd child)*/
 .i-name > :nth-child(3) {
+  line-height: 1.3rem;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   color: black;
   margin-top: 25px;
 }

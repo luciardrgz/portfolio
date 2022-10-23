@@ -7,8 +7,9 @@
 }
 
 .expect {
-  margin-top: 60px;
-  height: 30vh;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 /*What I Expect*/
@@ -26,11 +27,11 @@
 }
 
 .expectDescription {
-  margin-top: 100px;
+  width: 50rem;
   color: gray;
   font-style: 14px;
+  margin-top: 1rem;
   line-height: 1.8rem;
-  text-align: justify;
 }
 
 .w-right {
