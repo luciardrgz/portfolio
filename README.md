@@ -12,3 +12,7 @@ The page will reload when you make changes.
 ## ⚛️ React 
 📄 [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started)\
 📄 [React documentation](https://reactjs.org/)
+
+## Next Features
+🌎 Toggle between English and Spanish language\
+📱 Make it fully Responsive
