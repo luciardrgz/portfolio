@@ -1,7 +1,8 @@
 # My Portfolio 💼
 
 Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
-Made with Yarn + React + JS thanks to [ZAINKEEPSCODE](https://youtu.be/CKAn5dCK6RE)'s tutorial 💛 
+Made with Yarn + React + JS thanks to [ZAINKEEPSCODE](https://youtu.be/CKAn5dCK6RE)'s tutorial 💛 <br> 
+Not responsive, <b>view it on desktop for your own good</b> 🙏🏼
 
 ## 🧶 Yarn Commands
 ### `yarn start`
