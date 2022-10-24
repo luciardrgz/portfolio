@@ -1,10 +1,10 @@
 import Navbar from "./Components/Navbar/Navbar";
 import "./App.css";
 import Intro from "./Components/Intro/Intro";
-import Services from "./Components/Services/Services";
-import { Experience } from "./Components/Experience/Experience";
-import Works from "./Components/Works/Works";
-import Portfolio from "./Components/Portfolio/Portfolio";
+import Present from "./Components/Present/Present";
+import { Circles } from "./Components/Circles/Circles";
+import Future from "./Components/Future/Future";
+import Projects from "./Components/Projects/Projects";
 //import Testimonial from "./Components/Testimonials/Testimonial";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
@@ -25,10 +25,10 @@ function App() {
     >
       <Navbar />
       <Intro />
-      <Services />
-      <Experience />
-      <Works />
-      <Portfolio />
+      <Present />
+      <Circles />
+      <Future />
+      <Projects />
       {/*<Testimonial /> --- Section that could be useful someday :) but not today */}
       <Contact />
       <Footer />

@@ -24,12 +24,12 @@
   color: var(--purple);
   font-size: 2.5rem;
   font-weight: bold;
+  margin-top: -10px;
 }
 
 .expectDescription {
   width: 50rem;
   color: gray;
-  font-style: 14px;
   margin-top: 1rem;
   line-height: 1.8rem;
 }
@@ -123,10 +123,21 @@
 
 @media screen and (max-width: 480px) {
   .works {
-    flex-direction: column;
     height: 55rem;
     padding: 0;
     gap: 5rem;
+  }
+
+  .expectDescription {
+    background-color: red;
+    margin-left: -150px;
+    text-align: justify;
+    -webkit-columns: 250px 3;
+    -moz-columns: 250px 3;
+    columns: 250px 3;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
   }
 
   .w-right {

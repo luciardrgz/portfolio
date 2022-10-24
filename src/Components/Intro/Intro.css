@@ -18,7 +18,7 @@
   flex-direction: column;
 }
 
-/* Hi, Hope (Name's 1st child)*/
+/* Hi there (Name's 1st child)*/
 .i-name > :nth-child(1) {
   color: var(--black);
   font-weight: bold;
@@ -44,7 +44,7 @@
 
 .i-button {
   font-weight: bold;
-  width: 7rem;
+  width: 10rem;
   height: 2rem;
 }
 
@@ -111,10 +111,12 @@
 
 @media screen and (max-width: 480px) {
   .intro {
+    width: 100%;
     flex-direction: column;
-    height: 64rem;
     gap: 7rem;
+    height: 64rem;
   }
+
   .i-right {
     transform: scale(0.8);
     left: -3rem;
@@ -123,6 +125,7 @@
     display: none;
   }
   .floating-div:nth-of-type(1) {
+    /* display: none; */
     top: -7rem !important;
   }
 }

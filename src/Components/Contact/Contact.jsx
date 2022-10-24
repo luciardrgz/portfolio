@@ -38,14 +38,12 @@ const Contact = () => {
     <div className="contact-form" id="Contact">
       <div className="w-left">
         <div className="letsConnect">
-          <span style={{ color: darkMode ? "white" : "" }}>
-            Let's connect <br />
-          </span>
-          <span>I don't byte! 🦖</span>
-          <div
-            className="blur s-blur1"
-            style={{ background: "#ABF1FF94" }}
-          ></div>
+          <span style={{ color: darkMode ? "white" : "" }}>Let's connect</span>
+          <span>I don't byte!</span>
+
+          <div className="badum">
+            <label>*Ba dum tss* 🥁</label>
+          </div>
         </div>
       </div>
 

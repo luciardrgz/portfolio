@@ -1,8 +1,8 @@
 import React from "react";
-import "./Experience.css";
-export const Experience = () => {
+import "./Circles.css";
+export const Circles = () => {
   return (
-    <div className="experience" id="Experience">
+    <div className="experience" id="Circles">
       <div className="achievement">
         <div className="circle">2</div>
         <span>years </span>

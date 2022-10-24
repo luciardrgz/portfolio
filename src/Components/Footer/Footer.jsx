@@ -12,11 +12,19 @@ const Footer = () => {
         <span>If you made it this far down, thank you for doing so 💚</span>
 
         <div className="f-icons">
-          <a href="https://www.linkedin.com/in/luciardrgz/">
+          <a
+            href="https://www.linkedin.com/in/luciardrgz/"
+            target="_BLANK"
+            rel="noreferrer"
+          >
             <Linkedin color="white" size="3rem" />
           </a>
 
-          <a href="https://github.com/luciardrgz">
+          <a
+            href="https://github.com/luciardrgz"
+            target="_BLANK"
+            rel="noreferrer"
+          >
             <Github color="white" size="3rem" />
           </a>
         </div>

@@ -12,6 +12,7 @@ import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Intro = () => {
   const transition = { duration: 2, type: "spring" };
@@ -31,26 +32,40 @@ const Intro = () => {
         </div>
 
         <div className="i-icons">
-          <a href="https://github.com/luciardrgz">
+          <a
+            href="https://github.com/luciardrgz"
+            target="_BLANK"
+            rel="noreferrer"
+          >
             <img src={Github} alt="" />
           </a>
 
-          <a href="https://www.linkedin.com/in/luciardrgz/">
+          <a
+            href="https://www.linkedin.com/in/luciardrgz/"
+            target="_BLANK"
+            rel="noreferrer"
+          >
             <img src={LinkedIn} alt="" />
           </a>
 
-          <a href="https://drive.google.com/drive/folders/1t16MIT-lSRWpcpvIx13h9DijOSkazQND?usp=sharing">
+          <a
+            href="https://drive.google.com/drive/folders/1t16MIT-lSRWpcpvIx13h9DijOSkazQND?usp=sharing"
+            target="_BLANK"
+            rel="noreferrer"
+          >
             <img src={CV} alt="" />
           </a>
         </div>
 
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="button i-button"
-        >
-          Let's talk!
-        </motion.button>
+        <Link spy={true} to="Contact" smooth={true}>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="button i-button"
+          >
+            Let's connect!
+          </motion.button>
+        </Link>
       </div>
 
       <div className="i-right">

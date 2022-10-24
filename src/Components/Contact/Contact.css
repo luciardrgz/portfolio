@@ -7,8 +7,9 @@
 }
 
 .letsConnect {
-  margin-top: 300px;
-  height: 15vh;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 /*Let's connect*/
@@ -21,8 +22,14 @@
 /*I don't byte*/
 .letsConnect > :nth-child(2) {
   color: var(--purple);
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: bold;
+  margin-top: -10px;
+}
+
+.badum {
+  margin-top: 10px;
+  text-align: right;
 }
 
 .c-right {

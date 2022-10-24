@@ -1,5 +1,5 @@
 import React from "react";
-import "./Services.css";
+import "./Present.css";
 import Studying from "../../img/studying.png";
 import GraphicD from "../../img/design.webp";
 import Camera from "../../img/camera.png";
@@ -8,24 +8,24 @@ import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
 
-const Services = () => {
+const Present = () => {
   const transition = { duration: 1, type: "spring" };
 
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="services" id="Services">
+    <div className="services" id="Present">
       {/*Left side*/}
       <div className="doing">
         <span style={{ color: darkMode ? "white" : "" }}>This is what</span>
         <span>I'm currently doing!</span>
-        <span className="currentlyDoing">
+        <div className="currentlyDoing">
           🤓 Study backend programming at University and play a bit with
           frontend on my own <br />
           💸 Earning money with design, photography & filmmaking <br />
           👩🏻‍💻 Aiming to get my first job as a developer as soon as I finish
           college this year.
-        </span>
+        </div>
 
         <a
           href="https://drive.google.com/drive/folders/1t16MIT-lSRWpcpvIx13h9DijOSkazQND?usp=sharing"
@@ -47,7 +47,7 @@ const Services = () => {
       <div className="cards">
         {/* 1st Card*/}
         <motion.div
-          initial={{ top: "2rem", left: "20rem" }}
+          initial={{ top: "2rem", left: "16rem" }}
           whileInView={{ left: "15rem" }}
           transition={transition}
         >
@@ -65,7 +65,7 @@ const Services = () => {
 
         {/*2nd Card*/}
         <motion.div
-          initial={{ left: "-9rem", top: "12rem" }}
+          initial={{ left: "-5rem", top: "12rem" }}
           whileInView={{ left: "-4rem" }}
           transition={transition}
         >
@@ -81,7 +81,7 @@ const Services = () => {
 
         {/*3rd Card*/}
         <motion.div
-          initial={{ top: "24rem", left: "20rem" }}
+          initial={{ top: "24rem", left: "16rem" }}
           whileInView={{ left: "15rem" }}
           transition={transition}
         >
@@ -105,4 +105,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Present;

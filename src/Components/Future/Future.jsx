@@ -1,5 +1,5 @@
 import React from "react";
-import "./Works.css";
+import "./Future.css";
 import Java from "../../img/java.png";
 import Springboot from "../../img/spring-boot.png";
 import Robot from "../../img/robot.png";
@@ -9,16 +9,16 @@ import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
 
-const Works = () => {
+const Future = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="works" id="Present">
+    <div className="works" id="Future">
       {/*Left Side*/}
       <div className="expect">
         <span style={{ color: darkMode ? "white" : "" }}>What I hope</span>
         <span>for my future</span>
-        <span className="expectDescription">
+        <div className="expectDescription">
           🧠 I want to keep improving in Java, Springboot and MySQL — also
           backend knowledge in general
           <br />
@@ -27,7 +27,7 @@ const Works = () => {
           <br />
           ✈️ I plan to move to another country as soon as my seniority allows me
           to do so.
-        </span>
+        </div>
       </div>
 
       {/*Right Side*/}
@@ -70,4 +70,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Future;
