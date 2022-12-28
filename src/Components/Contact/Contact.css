@@ -1,13 +1,12 @@
 .contact-form {
-  padding: 0 3rem 0 3rem;
+  height: 35.8em;
+  margin-top: 3em;
+  padding: 0 3em 0 3em;
   display: flex;
-  height: 50vh;
-  margin-top: 300px;
-  margin-bottom: 10vh;
 }
 
 .letsConnect {
-  margin-top: 100px;
+  margin-top: 14em;
   display: flex;
   flex-direction: column;
 }
@@ -15,73 +14,90 @@
 /*Let's connect*/
 .letsConnect > :nth-child(1) {
   color: var(--black);
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
 /*I don't byte*/
 .letsConnect > :nth-child(2) {
+  margin-top: -0.2em;
   color: var(--purple);
-  font-size: 2.8rem;
+  font-size: 2.8em;
   font-weight: bold;
-  margin-top: -10px;
 }
 
 .badum {
-  margin-top: 10px;
+  margin-top: 0.3em;
   text-align: right;
 }
 
+/* Form box*/
 .c-right {
-  margin-top: 250px;
-  height: 400px;
-  display: flex;
+  margin-top: 12em;
+  margin-left: 12em;
+  width: 30em;
+  height: 19em;
   justify-content: center;
-  position: relative;
-  flex: 1;
 }
 
+/* Form positions */
 .c-right > form {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2em;
   align-items: center;
+  font-size: 0.5em;
 }
 
+/* Form inputs*/
 .c-right .user {
-  width: 20rem;
-  height: 2rem;
-  padding: 0.3em;
+  width: 20em;
+  height: 1em;
+  padding: 0.3em 0em;
   outline: none;
-  border: 2px solid var(--purple);
-  border-radius: 8px;
-  font-size: 22px;
-  font-weight: 600;
+  border: 0.1em solid var(--purple);
+  border-radius: 0.2em;
+}
+
+input::placeholder {
+  font-size: 0.8em;
+  color: rgb(165, 165, 165);
+}
+
+/* Hidding placeholder when clicking on input field*/
+input:focus::placeholder {
+  color: white;
 }
 
 textarea {
-  height: 4rem !important;
+  height: 4em !important;
+  resize: none;
+}
+
+textarea::placeholder {
+  font-size: 0.8em;
+  color: rgb(165, 165, 165);
 }
 
 .c-blur1 {
-  top: 1rem;
-  left: 8rem;
+  top: 1em;
+  left: 8em;
 }
 
 .send-button {
   font-weight: bold;
-  width: 7rem;
-  height: 2rem;
+  width: 7em;
+  height: 2.5em;
 }
 
 @media screen and (max-width: 480px) {
   .contact-form {
     padding: 0;
     flex-direction: column;
-    gap: 5rem;
-    height: 40rem;
+    gap: 5em;
+    height: 40em;
   }
   .c-right .user {
-    width: 16rem;
+    width: 16em;
   }
 }

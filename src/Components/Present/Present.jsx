@@ -20,11 +20,9 @@ const Present = () => {
         <span style={{ color: darkMode ? "white" : "" }}>This is what</span>
         <span>I'm currently doing!</span>
         <div className="currentlyDoing">
-          🤓 Study backend programming at University and play a bit with
-          frontend on my own <br />
+          🤓 Migrating my brain from Java to Kotlin <br />
           💸 Earning money with design, photography & filmmaking <br />
-          👩🏻‍💻 Aiming to get my first job as a developer as soon as I finish
-          college this year.
+          👩🏻‍💻 Looking for my first IT job!
         </div>
 
         <a
@@ -47,15 +45,15 @@ const Present = () => {
       <div className="cards">
         {/* 1st Card*/}
         <motion.div
-          initial={{ top: "2rem", left: "16rem" }}
-          whileInView={{ left: "15rem" }}
+          initial={{ top: "2em", left: "16em" }}
+          whileInView={{ left: "15em" }}
           transition={transition}
         >
           <Card
             emoji={Studying}
             heading={"Studying"}
             detail={
-              "I love learning about everything, but above all I like technology and challenges, that's why I'm studying my last year of the University Programming Degree at UTN Mar del Plata."
+              "I've just finished my University Programming Degree at UTN Mar del Plata with an 8.73 grade, but I keep on learning, as most of IT gang does."
             }
             btnLink={
               "https://mdp.utn.edu.ar/tecnicatura/tecnico_universitario_en_programacion/"
@@ -65,8 +63,8 @@ const Present = () => {
 
         {/*2nd Card*/}
         <motion.div
-          initial={{ left: "-5rem", top: "12rem" }}
-          whileInView={{ left: "-4rem" }}
+          initial={{ left: "-5em", top: "12em" }}
+          whileInView={{ left: "-4em" }}
           transition={transition}
         >
           <Card
@@ -81,8 +79,8 @@ const Present = () => {
 
         {/*3rd Card*/}
         <motion.div
-          initial={{ top: "24rem", left: "16rem" }}
-          whileInView={{ left: "15rem" }}
+          initial={{ top: "24em", left: "16em" }}
+          whileInView={{ left: "15em" }}
           transition={transition}
         >
           <Card

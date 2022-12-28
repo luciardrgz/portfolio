@@ -53,21 +53,21 @@ const Contact = () => {
             type="text"
             name="user_name"
             className="user"
-            placeholder="  Your Name"
+            placeholder=" Your Name"
             required
           />
           <input
             type="email"
             name="user_email"
             className="user"
-            placeholder="  Your Email"
+            placeholder=" Your Email"
             required
           />
 
           <textarea
             name="message"
             className="user"
-            placeholder="  What'd you like to tell me? :)"
+            placeholder=" What'd you like to tell me? :)"
             required
           ></textarea>
 

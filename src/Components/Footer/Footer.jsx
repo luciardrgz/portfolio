@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="footer">
       <img src={Wave} alt="" style={{ width: "100%" }} />
       <div className="f-content">
-        <span>If you made it this far down, thank you for doing so 💚</span>
+        <span>If you made it this far down, thank you for doing so 💛</span>
 
         <div className="f-icons">
           <a
@@ -17,7 +17,7 @@ const Footer = () => {
             target="_BLANK"
             rel="noreferrer"
           >
-            <Linkedin color="white" size="3rem" />
+            <Linkedin color="white" size="3em" />
           </a>
 
           <a
@@ -25,7 +25,7 @@ const Footer = () => {
             target="_BLANK"
             rel="noreferrer"
           >
-            <Github color="white" size="3rem" />
+            <Github color="white" size="3em" />
           </a>
         </div>
       </div>
