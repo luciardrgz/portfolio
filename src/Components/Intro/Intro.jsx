@@ -4,10 +4,10 @@ import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import SmileEmoji from "../../img/smile.png";
-import Rushpin from "../../img/rushpin.png";
+import WinkEmoji from "../../img/wink.gif";
+import Earth from "../../img/earth.gif";
 import CV from "../../img/cv.png";
-import glassesEmoji from "../../img/glassesEmoji.png";
+import HappyEmoji from "../../img/happy.gif";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
@@ -27,7 +27,7 @@ const Intro = () => {
           <span style={{ color: darkMode ? "white" : "" }}>Hi there! I'm</span>
           <span>Lucia Rodriguez</span>
           <span style={{ color: darkMode ? "darkGray" : "" }}>
-            Backend Student with knowledge in Java + SpringBoot and MySQL
+            Java <b>+</b> SpringBoot Backend Developer
           </span>
         </div>
 
@@ -73,9 +73,9 @@ const Intro = () => {
         <img src={Vector2} alt="" />
         <motion.img
           initial={{ left: "-36%" }}
-          whileInView={{ left: "-13%" }}
+          whileInView={{ left: "-17%" }}
           transition={transition}
-          src={glassesEmoji}
+          src={HappyEmoji}
           alt=""
         />
 
@@ -84,18 +84,13 @@ const Intro = () => {
           whileInView={{ left: "68%" }}
           transition={transition}
           style={{ top: "-4%", left: "68%" }}
-          className="floating-div"
         >
           <a
             href="https://goo.gl/maps/tL8q6JMy55MJKYX68"
             target="_BLANK"
             rel="noreferrer"
           >
-            <FloatingDiv
-              image={Rushpin}
-              txt1="Mar del Plata,"
-              txt2="Argentina"
-            />
+            <FloatingDiv image={Earth} txt1="Mar del Plata," txt2="Argentina" />
           </a>
         </motion.div>
 
@@ -104,28 +99,13 @@ const Intro = () => {
           whileInView={{ left: "0rem" }}
           transition={transition}
           style={{ top: "18rem", left: "0rem" }}
-          className="floating-div"
         >
           <FloatingDiv
-            image={SmileEmoji}
-            txt1="Also managed C,"
-            txt2="PHP and JS"
+            image={WinkEmoji}
+            txt1="I used C, PHP,"
+            txt2="MySQL & JS also!"
           />
         </motion.div>
-
-        {/*Blurs*/}
-        <div className="blur" style={{ background: "rgb (238 210 255)" }}></div>
-
-        <div
-          className="blur"
-          style={{
-            background: "#C1F5FF",
-            top: "14rem",
-            left: "-3rem",
-            width: "21rem",
-            height: "11rem",
-          }}
-        ></div>
       </div>
     </div>
   );
