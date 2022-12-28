@@ -1,8 +1,12 @@
 /* Wrapper */
 .n-wrapper {
-  height: 10vh;
+  height: 10%;
+  width: 100%;
+  margin-top: -2%;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  z-index: 2;
 }
 
 /* Left side */
@@ -10,41 +14,39 @@
   flex: 1;
   align-items: center;
   display: flex;
-  gap: 2rem;
+  gap: 10%;
 }
 
 /* My name on the left side */
 .n-name {
-  font-size: 1.3rem;
+  font-size: 1em;
   font-weight: bold;
+  margin-left: 45%;
 }
 
-/* Right side */
+/* List on the right side */
 .n-right {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-}
-
-/* List in general */
-.n-list {
-  margin-left: 350px;
   flex: 10;
 }
 
 /* Unordered list*/
-.n-list > ul {
+.n-right > ul {
+  list-style: none;
   display: flex;
-  gap: 2rem;
-  margin-right: 4rem;
+  gap: 2em;
+  margin-left: 54%;
   cursor: pointer;
-  font-weight: bold;
 }
 
-.n-list a:hover {
+/* Unordered list hover*/
+.n-right a:hover {
   font-weight: bold;
   color: var(--purple);
+}
+
+/* Unordered list items*/
+.n-right li {
+  font-size: 1em;
 }
 
 @media screen and (max-width: 480px) {

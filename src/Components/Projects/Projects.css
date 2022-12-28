@@ -1,22 +1,16 @@
 .portfolio {
+  height: 32.5em;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
-  margin-bottom: 14rem;
 }
 
-/*Heading*/
-.portfolio span:nth-of-type(1) {
-  color: var(--black);
-  font-size: 2rem;
-  font-weight: bold;
-}
-
+/* My Projects*/
 .portfolio span:nth-of-type(2) {
+  margin-top: 1em;
   color: var(--purple);
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
@@ -26,18 +20,18 @@
 }
 
 .portfolio-slider {
-  margin-top: 3rem;
+  margin-top: 3em;
   width: 100%;
 }
 
 .portfolio-slider .swiper-slide {
-  width: 20rem;
+  width: 20em;
 }
 
 .portfolio img {
-  width: 19rem;
-  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
-  border-radius: 19px;
+  width: 19em;
+  filter: drop-shadow(0em 1em 1em rgba(0, 0, 0, 0.25));
+  border-radius: 1.5em;
 }
 
 a {

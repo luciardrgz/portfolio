@@ -1,37 +1,36 @@
 .works {
-  padding: 0 3rem 0 3rem;
+  margin-left: 3em;
   display: flex;
-  height: 90vh;
-  margin-top: -5rem;
-  margin-bottom: -16rem;
+  height: 32em;
 }
 
 .expect {
-  margin-top: 100px;
+  margin-top: 9em;
   display: flex;
+  height: 12em;
   flex-direction: column;
 }
 
-/*What I Expect*/
+/*What I hope*/
 .expect > :nth-child(1) {
   color: var(--black);
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
-/* For my future*/
+/* for my future*/
 .expect > :nth-child(2) {
   color: var(--purple);
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: bold;
-  margin-top: -10px;
+  margin-top: -0.1em;
 }
 
 .expectDescription {
-  width: 50rem;
+  width: 50em;
   color: gray;
-  margin-top: 1rem;
-  line-height: 1.8rem;
+  margin-top: 1em;
+  line-height: 1.8em;
 }
 
 .w-right {
@@ -40,13 +39,12 @@
 
 /* Main white circle */
 .w-mainCircle {
-  left: 9rem;
+  margin-top: 7em;
+  width: 18em;
+  height: 18em;
   position: relative;
-  width: 18rem;
-  height: 18rem;
   border-radius: 100%;
-  box-shadow: var(--smboxShadow);
-  top: 2rem;
+  box-shadow: var(--boxShadow);
   background: white;
 }
 
@@ -54,46 +52,52 @@
   position: absolute;
 }
 
-/*Uphold logo*/
+/*Java */
 .w-mainCircle > :nth-child(1) {
-  left: -3rem;
-  top: 6rem;
+  left: -3em;
+  top: 6em;
 }
 
-/*Fiverr logo*/
+/*Android*/
 .w-mainCircle > :nth-child(2) {
-  left: 6rem;
-  top: -3rem;
+  left: 6em;
+  top: -3em;
 }
 
-/*Amazon logo*/
+/*Robot*/
 .w-mainCircle > :nth-child(3) {
-  left: 6rem;
-  top: 6rem;
+  left: 6em;
+  top: 6em;
 }
 
-/*S logo*/
+/*AI*/
 .w-mainCircle > :nth-child(4) {
-  left: 15rem;
-  top: 6rem;
+  left: 15em;
+  top: 6em;
 }
 
-/*Facebook logo*/
+/*Cybersecurity */
 .w-mainCircle > :nth-child(5) {
-  left: 6rem;
-  top: 15rem;
+  left: 6em;
+  top: 15em;
 }
 
+.w-mainCircle > :nth-child(5) img {
+  margin-right: 0.4em;
+  margin-top: 0.2em;
+}
+
+/* All little circles*/
 .w-secCircle {
-  width: 6rem;
-  height: 6rem;
+  width: 6em;
+  height: 6em;
   position: absolute;
-  border-radius: 100%;
-  border: 5px solid #ebebeb;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--smboxShadow);
+  border-radius: 100%;
+  border: 0.2em solid #ebebeb;
+  box-shadow: var(--boxShadow);
   background: white;
 }
 
@@ -103,34 +107,33 @@
 
 .w-backCircle {
   position: absolute;
-  height: 13rem;
-  width: 13rem;
+  height: 13em;
+  width: 13em;
   border-radius: 100%;
   z-index: -1;
 }
 
 .blueCircle {
   background: #1949b8;
-  left: 10rem;
-  top: 0rem;
+  left: 10em;
+  top: 0em;
 }
 
 .yellowCircle {
   background: #f5c32c;
-  left: 10rem;
-  top: 8rem;
+  left: 10em;
+  top: 8em;
 }
 
 @media screen and (max-width: 480px) {
   .works {
-    height: 55rem;
+    height: 55em;
     padding: 0;
-    gap: 5rem;
+    gap: 5em;
   }
 
   .expectDescription {
-    background-color: red;
-    margin-left: -150px;
+    margin-left: -3em;
     text-align: justify;
     -webkit-columns: 250px 3;
     -moz-columns: 250px 3;
@@ -152,6 +155,6 @@
   }
 
   .w-backCircle {
-    left: 8rem !important;
+    left: 8em !important;
   }
 }

@@ -1,57 +1,44 @@
-.experience {
-  padding: 0 3rem 0 3rem;
+.circles {
+  margin-top: 15em;
+  padding: 0 3em 0 3em;
+  height: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
-  height: 20vh;
-  margin-bottom: 10rem;
+  gap: 5em;
 }
 
-.achievement {
+.circle-box {
+  margin-top: 12em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-weight: 100;
-}
-
-/* 1st Span of every achievement */
-.achievement span:nth-of-type(1) {
-  margin-top: -30px;
   font-weight: bold;
 }
 
-/* 2nd Span of every achievement */
-.achievement span:nth-of-type(2) {
+/* 1st Span of every circle */
+.circle-box span:nth-of-type(1) {
   font-weight: bold;
+}
+
+/* 2nd Span of every circle */
+.circle-box span:nth-of-type(2) {
   color: var(--purple);
+  font-weight: bold;
 }
 
 .circle {
-  width: 4rem;
-  height: 4rem;
-  background: white;
-  border-radius: 100%;
+  width: 2em;
+  height: 2em;
+  margin-bottom: 0.5em;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  background: white;
+  border-radius: 100%;
+  font-size: 1.5em;
   font-weight: bold;
-  margin-bottom: 2rem;
   font-weight: 800;
   color: black;
-}
-
-.circle::before {
-  border-radius: 100%;
-  content: "";
-  background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
-  top: -8px;
-  left: -8px;
-  bottom: -8px;
-  right: -8px;
-  position: absolute;
-  z-index: -1;
-  box-shadow: var(--boxShadow);
 }

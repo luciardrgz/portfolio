@@ -1,16 +1,16 @@
 .toggle {
   display: flex;
   justify-content: space-between;
-  border: 3px solid var(--purple);
-  border-radius: 1rem;
+  border: 0.1em solid var(--purple);
+  border-radius: 1em;
   position: relative;
-  padding: 2px;
+  padding: 0.1em;
   cursor: pointer;
 }
 
 .toggle > * {
-  width: 1rem;
-  height: 1rem;
+  width: 1em;
+  height: 1em;
   color: var(--purple);
 }
 

@@ -1,13 +1,11 @@
 .services {
-  padding: 0 3rem 0 3rem;
   display: flex;
-  height: 50vh;
-  margin-top: 7rem;
-  margin-bottom: 30rem;
+  height: 24em;
 }
 
 .doing {
-  margin-top: 300px;
+  margin-top: 11em;
+  margin-left: 3em;
   display: flex;
   flex-direction: column;
 }
@@ -15,65 +13,55 @@
 /* This is what */
 .doing > :nth-child(1) {
   color: var(--black);
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
 /* I'm currently doing  */
 .doing > :nth-child(2) {
   color: var(--purple);
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: bold;
-  margin-top: -10px;
+  margin-top: -0.2em;
 }
 
 /* Description */
 .currentlyDoing {
-  width: 50rem;
+  width: 30em;
   color: gray;
-  font-style: 14px;
-  margin-top: 1rem;
-  line-height: 1.8rem;
+  margin-top: 1em;
+  line-height: 1.8em;
 }
 
+/* See my CV btn*/
 .s-button {
   font-weight: bold;
-  width: 10rem;
-  height: 2rem;
-  margin-top: 30px;
+  width: 11em;
+  height: 3em;
+  margin-top: 2em;
 }
 
+/* Cards folder -> Cards.css*/
 .cards {
   position: relative;
 }
-
 .cards > * {
   position: absolute;
-}
-
-.s-blur2 {
-  left: 14rem;
-  top: 8rem;
-}
-
-.s-blur1 {
-  left: -18rem;
-  top: 13rem;
 }
 
 @media screen and (max-width: 480px) {
   .services {
     margin-top: 0;
     flex-direction: column;
-    gap: 5rem;
-    height: 66rem;
+    gap: 5em;
+    height: 66em;
     padding: 0;
   }
 
   .cards {
     display: flex;
     flex-direction: column;
-    gap: 17rem;
+    gap: 17em;
   }
 
   .cards > * {

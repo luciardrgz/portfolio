@@ -20,7 +20,7 @@ const Toggle = () => {
       <Sun />
       <div
         className="t-button"
-        style={darkMode ? { left: "2px" } : { right: "2px" }}
+        style={darkMode ? { left: "1.1em" } : { right: "1.1em" }}
       ></div>
     </div>
   );
