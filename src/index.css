@@ -5,12 +5,12 @@
 .btn {
   background: linear-gradient(
     92.23deg,
-    #ff56f6 21.43%,
-    #b936ee 50.63%,
+    #72ff56 21.43%,
+    #4fee36 50.63%,
     #3bace2 100%,
     #406aff 117.04%
   );
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  box-shadow: 0px 1px 50px rgba(86, 255, 86, 0.51);
 }
 
 .btn:hover {
@@ -18,8 +18,8 @@
     92.23deg,
     #406aff 21.43%,
     #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
+    #4fee36 100%,
+    #72ff56 117.04%
   );
 }
 
@@ -29,8 +29,8 @@
     92.23deg,
     #406aff 21.43%,
     #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
+    #4fee36 100%,
+    #72ff56 117.04%
   );
 }
 
@@ -51,7 +51,7 @@
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
   }
   .btn {
-    @apply rounded-full font-primary text-white font-medium;
+    @apply rounded-full font-primary text-black font-extrabold;
   }
   .btn-sm {
     @apply h-[48px] px-6 text-sm;
@@ -63,9 +63,38 @@
     @apply text-base;
   }
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#56ff56] font-bold font-primary hover:from-[#ffffff] hover:to-[#b1b1b1];
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+  .text-shadow-lg {
+    text-shadow: 0 0px 15px rgba(106, 255, 0, 0.822);
+  }
+  .title-style {
+    color: #72ff56;
+    font-weight: bolder;
+    line-height: -3em;
+  }
+  .active-link {
+    border-radius: 50%;
+    background: linear-gradient(
+      92.23deg,
+      #406aff 21.43%,
+      #3bace2 50.63%,
+      #4fee36 100%,
+      #72ff56 117.04%
+    );
+    color: black;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }

@@ -1,11 +1,7 @@
 import React from "react";
-import { BiHomeAlt, BiUser } from "react-icons/bi";
-import {
-  BsClipboardData,
-  BsBriefcase,
-  BsChatSquare,
-  BsChatSquareText,
-} from "react-icons/bs";
+import { HiHome, HiLightBulb, HiBriefcase } from "react-icons/hi";
+import { GoTelescope } from "react-icons/go";
+import { SiGooglemessages } from "react-icons/si";
 import { Link } from "react-scroll";
 
 const Nav = () => {
@@ -15,49 +11,49 @@ const Nav = () => {
         <div className="w-full bg-black/20 h-[96px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex items-center justify-between text-2xl text-white/50">
           <Link
             to="home"
-            activeClass="active"
+            activeClass="active-link"
             smooth={true}
             spy={true}
             offset={-200}
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
-            <BiHomeAlt />
-          </Link>
-          <Link
-            to="future"
-            activeClass="active"
-            smooth={true}
-            spy={true}
-            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
-          >
-            <BiUser />
+            <HiHome />
           </Link>
           <Link
             to="present"
-            activeClass="active"
+            activeClass="active-link"
             smooth={true}
             spy={true}
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
-            <BsClipboardData />
+            <HiLightBulb />
+          </Link>
+          <Link
+            to="future"
+            activeClass="active-link"
+            smooth={true}
+            spy={true}
+            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+          >
+            <GoTelescope />
           </Link>
           <Link
             to="work"
-            activeClass="active"
+            activeClass="active-link"
             smooth={true}
             spy={true}
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
-            <BsBriefcase />
+            <HiBriefcase />
           </Link>
           <Link
             to="contact"
-            activeClass="active"
+            activeClass="active-link"
             smooth={true}
             spy={true}
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
-            <BsChatSquareText />
+            <SiGooglemessages />
           </Link>
         </div>
       </div>

@@ -18,23 +18,24 @@ const Work = () => {
             className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0"
           >
             {/* text */}
-            <div>
-              <h2 className="h2 leading-tight text-accent">
-                My Latest <br />
-                Work
+            <div className="-mb-20 lg:-mb-7">
+              <h2 className="h2 title-style text-shadow-lg">
+                My latest <br />
+                work & projects
               </h2>
-              <p className="max-w-sm mb-16">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corporis, impedit dolore esse voluptatem aliquid debitis animi
-                quisquam fugit possimus perferendis.
+              <p className="max-w-sm mb-6 text-justify lg:text-start">
+                If any of them is published, you can click its name and see the
+                live demo. Check their source code clicking the button above!
               </p>
-              <button className="btn btn-sm">View all projects</button>
+              <button className="btn btn-sm float-right lg:float-none">
+                View all
+              </button>
             </div>
 
-            {/* image */}
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+            {/* 2 */}
+            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl mt-[70px]">
               {/* overlay */}
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              <div className="group-hover:bg-black/80 w-full h-full absolute z-40 transition-all duration-300"></div>
 
               {/* img */}
               <img
@@ -45,12 +46,16 @@ const Work = () => {
 
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Desing</span>
+                <span className="text-gradient">
+                  Java Swing + SQL for Desktop (IN PROCESS)
+                </span>
               </div>
 
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+                <span className="text-3xl text-white">
+                  Inventory Management System
+                </span>
               </div>
             </div>
           </motion.div>
@@ -62,12 +67,11 @@ const Work = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 flex flex-col gap-y-10"
           >
-            {/* image */}
+            {/* 1 */}
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               {/* overlay */}
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              <div className="group-hover:bg-black/80 w-full h-full absolute z-40 transition-all duration-300"></div>
 
-              {/* img */}
               <img
                 className="group-hover:scale-125 transition-all duration-500"
                 src={Img2}
@@ -76,19 +80,26 @@ const Work = () => {
 
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Desing</span>
+                <span className="text-gradient">Traditional Web + CMS</span>
               </div>
 
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+                <a
+                  className="text-3xl text-white"
+                  href="https://full-tecno-luciardrgz.vercel.app/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  Full Tecno
+                </a>
               </div>
             </div>
 
-            {/* image */}
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+            {/* 3 */}
+            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl lg:mt-4">
               {/* overlay */}
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              <div className="group-hover:bg-black/80 w-full h-full absolute z-40 transition-all duration-300"></div>
 
               {/* img */}
               <img
@@ -99,12 +110,12 @@ const Work = () => {
 
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Desing</span>
+                <span className="text-gradient">Android (PROTOTYPED)</span>
               </div>
 
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+                <span className="text-3xl text-white">Tiki Tiki</span>
               </div>
             </div>
           </motion.div>

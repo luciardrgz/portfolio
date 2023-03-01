@@ -1,8 +1,10 @@
 import React from "react";
 import Image from "../assets/avatar.svg";
-import { FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFileDownload } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 import { fadeIn } from "../variants";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
@@ -19,7 +21,7 @@ const Banner = () => {
       ref={ref}
     >
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
+        <div className="flex flex-col gap-y-8 lg:flex-row items-center lg:items-center lg:gap-x-12">
           {/* text */}
           <div className="flex-1 text-center font-secondary lg:text-left">
             <motion.h1
@@ -27,7 +29,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-[55px] font-bold leading-[0.8] lg:text-[110px]"
+              className="text-[55px] font-bold leading-[0.8] lg:text-[70px]"
             >
               LUCÍA <span>RODRIGUEZ</span>
             </motion.h1>
@@ -37,7 +39,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
+              className="mb-6 text-[36px] lg:text-[40px] font-secondary font-semibold uppercase leading-[1]"
             >
               <span className="text-white mr-4">I'm a</span>
               <TypeAnimation
@@ -50,47 +52,51 @@ const Banner = () => {
                   2000,
                 ]}
                 speed={50}
-                className="text-accent"
+                className="text-[#72ff56] text-shadow-lg"
                 wrapper="span"
                 repeat={Infinity}
               ></TypeAnimation>
             </motion.div>
 
-            {/* stats */}
-            <motion.div
-              variants={fadeIn("up", 0.4)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="flex gap-x-6 lg:gap-x-10 mb-12"
-            >
-              <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={21} duration={1} /> : null}
+            <div className="flex justify-center lg:flex-none lg:justify-start mt-[50px]">
+              {/* stats */}
+              <motion.div
+                variants={fadeIn("up", 0.4)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className="flex gap-x-6 lg:gap-x-10 mb-12"
+              >
+                <div>
+                  <div className="text-[40px] font-tertiary text-gradient mb-2">
+                    {inView ? (
+                      <CountUp start={0} end={21} duration={1} />
+                    ) : null}
+                  </div>
+                  <div className="font-primary text-sm tracking-[2px]">
+                    years <br /> existing
+                  </div>
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
-                  Years <br /> old
-                </div>
-              </div>
 
-              <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={2} duration={1} /> : null}
+                <div>
+                  <div className="text-[40px] font-tertiary text-gradient mb-2">
+                    {inView ? <CountUp start={0} end={5} duration={1} /> : null}
+                  </div>
+                  <div className="font-primary text-sm tracking-[2px]">
+                    languages used <br /> in personal projects
+                  </div>
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
-                  Years <br /> coding
-                </div>
-              </div>
 
-              <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={5} duration={1} /> : null}
+                <div>
+                  <div className="text-[40px] font-tertiary text-gradient mb-2">
+                    {inView ? <CountUp start={0} end={2} duration={1} /> : null}
+                  </div>
+                  <div className="font-primary text-sm tracking-[2px]">
+                    years <br /> coding
+                  </div>
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
-                  Languages used <br /> in personal projects
-                </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
 
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -99,10 +105,24 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Let's connect!</button>
-              <a href="#" className="text-gradient btn-link">
-                My Portfolio
-              </a>
+              <motion.button
+                className="btn btn-lg"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <a href="https://www.linkedin.com/in/luciardrgz/">
+                  Let's connect!
+                </a>
+              </motion.button>
+              <Link
+                to="work"
+                activeClass="active"
+                smooth={true}
+                spy={true}
+                className="text-gradient btn-link hover:cursor-pointer"
+              >
+                Latest work
+              </Link>
             </motion.div>
 
             {/* socials */}
@@ -113,17 +133,38 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#">
+              <motion.a
+                href="https://www.linkedin.com/in/luciardrgz/"
+                title="My LinkedIn profile"
+                target={"_blank"}
+                rel="noreferrer"
+                whileHover={{ scale: 1.5 }}
+                whileTap={{ scale: 1.3 }}
+              >
                 <FaLinkedin />
-              </a>
+              </motion.a>
 
-              <a href="#">
+              <motion.a
+                href="https://github.com/luciardrgz"
+                title="My GitHub profile"
+                target={"_blank"}
+                rel="noreferrer"
+                whileHover={{ scale: 1.5 }}
+                whileTap={{ scale: 1.3 }}
+              >
                 <FaGithub />
-              </a>
+              </motion.a>
 
-              <a href="#">
-                <FaDribbble />
-              </a>
+              <motion.a
+                href="https://drive.google.com/drive/u/0/folders/1t16MIT-lSRWpcpvIx13h9DijOSkazQND"
+                target={"_blank"}
+                rel="noreferrer"
+                title="Download CV"
+                whileHover={{ scale: 1.5 }}
+                whileTap={{ scale: 1.3 }}
+              >
+                <FaFileDownload />
+              </motion.a>
             </motion.div>
           </div>
 
@@ -132,7 +173,7 @@ const Banner = () => {
             variants={fadeIn("down", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
+            className="lg:flex flex-1 max-w-[320px] lg:max-w-[482px] shadow-lg"
           >
             <img src={Image} alt="" />
           </motion.div>

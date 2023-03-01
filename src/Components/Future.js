@@ -24,18 +24,22 @@ const Future = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1"
           >
-            <h2 className="h2 text-accent">My future</h2>
-            <h3 className="h3 mb-1">🧠 Android</h3>
-            <p className="mb-6 text-xl">
-              I'm going to become an Android Developer. Java is an option, but I
-              think I'm sticking to Kotlin. Who knows?
+            <h2 className="h2 text-shadow-lg title-style text-shadow-lg">
+              My future
+            </h2>
+            <h3 className="h3 mb-1 text-[#72ff56]">🧠 Android</h3>
+            <p className="mb-6 text-justify">
+              I'm going to become an Android Developer. <br /> Java is an
+              option, but I think I'm sticking to Kotlin. Who knows?
             </p>
-            <h3 className="h3 mb-1">🤖 AI / Robotics / Cybersecurity</h3>
-            <p className="mb-6 text-xl">
+            <h3 className="h3 mb-1 text-[#72ff56]">
+              🤖 AI / Robotics / Cybersecurity
+            </h3>
+            <p className="mb-6 text-justify">
               I'd love to study and work in any of these fields!
             </p>
-            <h3 className="h3 mb-1">✈️ Emigrate</h3>
-            <p className="mb-6 text-xl">
+            <h3 className="h3 mb-1 text-[#72ff56]">✈️ Emigrate</h3>
+            <p className="mb-6 text-justify">
               I plan to move to another country as soon as my seniority allows
               me to do so.
             </p>
