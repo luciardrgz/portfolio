@@ -18,7 +18,6 @@ const App = () => {
       <Future />
       <Work />
       <Contact />
-      <div className="h-[4000px]"></div>
     </div>
   );
 };

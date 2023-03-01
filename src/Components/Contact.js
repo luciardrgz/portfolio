@@ -16,10 +16,10 @@ const Contact = () => {
             className="flex-1 flex justify-start items-center"
           >
             <div>
-              <h2 className="text-[45px] lg:text-[90px] leading-none mb-2">
+              <h2 className="text-[35px] lg:text-[45px] leading-none mb-2 text-shadow-lg">
                 Let's connect <br /> I don't byte!
               </h2>
-              <h4 className=" text-xl text-accent font-medium mb-2 tracking-wide">
+              <h4 className=" text-xl text-[#72ff56] font-medium mb-2 tracking-wide">
                 *Ba dum tss* 🥁
               </h4>
             </div>
@@ -31,20 +31,20 @@ const Contact = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
+            className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 mt-6 mb-20 items-center"
           >
             <input
-              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
+              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-[#72ff56] transition-all"
               type="text"
               placeholder="Your name"
             />
             <input
-              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
+              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-[#72ff56] transition-all"
               type="text"
               placeholder="Your email"
             />
             <textarea
-              className="bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
+              className="bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-[#72ff56] transition-all resize-none mb-12"
               placeholder="Your message"
             ></textarea>
             <button className="btn btn-lg">Send message</button>
