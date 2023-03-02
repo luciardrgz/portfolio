@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaFileDownload } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import useMediaQuery from "../useMediaQuery.js";
 import { Link } from "react-scroll";
 import { fadeIn } from "../variants";
 import CountUp from "react-countup";
@@ -13,6 +14,10 @@ const Banner = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
+
+  const isMobile = useMediaQuery("(max-width: 767px)");
+  var repeat;
+  isMobile ? (repeat = 2) : (repeat = Infinity);
 
   return (
     <section
@@ -54,7 +59,7 @@ const Banner = () => {
                 speed={50}
                 className="text-[#72ff56] text-shadow-lg"
                 wrapper="span"
-                repeat={Infinity}
+                repeat={repeat}
               ></TypeAnimation>
             </motion.div>
 

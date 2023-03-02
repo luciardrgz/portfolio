@@ -18,14 +18,15 @@ const Work = () => {
             className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0"
           >
             {/* text */}
-            <div className="-mb-20 lg:-mb-7">
+            <div className="-mb-20 lg:mb-1">
               <h2 className="h2 title-style text-shadow-lg">
                 My latest <br />
                 work & projects
               </h2>
-              <p className="max-w-sm mb-6 text-justify lg:text-start">
+              <p className="max-w-sm mb-6 text-justify lg:text-start leading-6">
                 If any of them is published, you can click its name and see the
-                live demo. Check their source code clicking the button above!
+                live demo. <br /> Check out their source code clicking the
+                button above!
               </p>
               <button className="btn btn-sm float-right lg:float-none">
                 View all
@@ -45,15 +46,15 @@ const Work = () => {
               />
 
               {/* pretitle */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+              <div className="absolute -bottom-full left-12 group-hover:bottom-[110px] lg:group-hover:bottom-24 transition-all duration-500 z-50 leading-tight">
                 <span className="text-gradient">
                   Java Swing + SQL for Desktop (IN PROCESS)
                 </span>
               </div>
 
               {/* title */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">
+              <div className="absolute -bottom-full left-12 group-hover:bottom-[40px] transition-all duration-700 z-50 mt-50 lg:group-hover:bottom-14">
+                <span className="text-2xl lg:text-3xl text-white">
                   Inventory Management System
                 </span>
               </div>

@@ -16,10 +16,10 @@ const Contact = () => {
             className="flex-1 flex justify-start items-center"
           >
             <div>
-              <h2 className="text-[35px] lg:text-[45px] leading-none mb-2 text-shadow-lg">
+              <h2 className="text-[#72ff56] text-[35px] lg:text-[45px] leading-none mb-2 text-shadow-lg">
                 Let's connect <br /> I don't byte!
               </h2>
-              <h4 className=" text-xl text-[#72ff56] font-medium mb-2 tracking-wide">
+              <h4 className=" text-xl font-medium mb-2 tracking-wide">
                 *Ba dum tss* 🥁
               </h4>
             </div>

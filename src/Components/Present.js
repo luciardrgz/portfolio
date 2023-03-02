@@ -26,7 +26,7 @@ const present = [
 
 const Present = () => {
   return (
-    <section className="section" id="present">
+    <section className="section -mb-20 lg:mb-0" id="present">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           {/* text & image */}
@@ -64,7 +64,7 @@ const Present = () => {
                       {title}
                     </h4>
 
-                    <p className="font-secondary leading-7 text-justify mb-5">
+                    <p className="font-secondary leading-6 text-justify mb-5">
                       {description}
                     </p>
                   </div>
