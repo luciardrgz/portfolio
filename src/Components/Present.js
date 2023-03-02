@@ -69,7 +69,11 @@ const Present = () => {
                     </p>
                   </div>
 
-                  <div className="flex flex-col flex-1 items-end">
+                  <motion.div
+                    className="flex flex-col flex-1 items-end"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
                     <a
                       href={link}
                       className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
@@ -78,7 +82,7 @@ const Present = () => {
                     >
                       <BsArrowUpRight />
                     </a>
-                  </div>
+                  </motion.div>
                 </div>
               );
             })}
