@@ -25,6 +25,7 @@ module.exports = {
       backgroundImage: {
         site: "url('./assets/site-bg.jpg')",
         future: "url('./assets/future.png')",
+        futureMobile: "url('./assets/futureMobile.png')",
         present: "url('./assets/present.png')",
       },
     },
