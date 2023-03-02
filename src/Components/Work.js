@@ -28,9 +28,19 @@ const Work = () => {
                 live demo. <br /> Check out their source code clicking the
                 button above!
               </p>
-              <button className="btn btn-sm float-right lg:float-none">
-                View all
-              </button>
+              <motion.button
+                className="btn btn-sm float-right lg:float-none"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <a
+                  href="https://github.com/luciardrgz?tab=repositories"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  View all
+                </a>
+              </motion.button>
             </div>
 
             {/* 2 */}
