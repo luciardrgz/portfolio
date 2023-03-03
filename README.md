@@ -19,6 +19,6 @@ Automatically opens [http://localhost:3000](http://localhost:3000) in your brows
 🌎 Toggle between English and Spanish language\
 
 ## Old version  
-Made with Yarn + React + JS - Deployed in Netlify
+Made with Yarn + React + JS - Deployed in Netlify <br/> 
 Not Responsive - Created based on [ZAINKEEPSCODE](https://youtu.be/CKAn5dCK6RE)'s tutorial 💛 <br/> 
 👉🏼 [Click here](https://luciarodriguez.netlify.app/) to check it out! <br/>
