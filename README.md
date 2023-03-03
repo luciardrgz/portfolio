@@ -16,7 +16,7 @@ Automatically opens [http://localhost:3000](http://localhost:3000) in your brows
 📄 [React documentation](https://reactjs.org/)
 
 ## Next Features
-🌎 Toggle between English and Spanish language\
+🌎 Toggle between English and Spanish language
 
 ## Old version  
 Made with Yarn + React + JS - Deployed in Netlify <br/> 
