@@ -75,7 +75,7 @@ const Banner = () => {
                 <div>
                   <div className="text-[40px] font-tertiary text-gradient mb-2">
                     {inView ? (
-                      <CountUp start={0} end={21} duration={1} />
+                      <CountUp start={0} end={22} duration={1} />
                     ) : null}
                   </div>
                   <div className="font-primary text-sm tracking-[2px]">
