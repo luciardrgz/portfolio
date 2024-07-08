@@ -66,7 +66,7 @@
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#56ff56] font-bold font-primary hover:from-[#ffffff] hover:to-[#b1b1b1];
   }
   .section {
-    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+    @apply py-24 lg:py-24 lg:h-screen flex items-center;
   }
   .text-shadow-lg {
     text-shadow: 0 0px 15px rgba(106, 255, 0, 0.822);

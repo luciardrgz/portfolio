@@ -5,21 +5,21 @@ import { fadeIn } from "../variants";
 
 const present = [
   {
-    title: "Studying",
+    title: "Working",
     description:
-      " I've just finished my University Programming Degree at UTN Mar del Plata with an 8.73 grade, but I keep on learning, as most of IT gang does.",
+      "I'm a backend dev at Baufest, a software company that provides solutions for different industries. I'm working with an awesome team in fintech with Java and Spring Boot!",
     link: "https://mdp.utn.edu.ar/tecnicatura/tecnico_universitario_en_programacion/",
   },
   {
-    title: "Designing",
+    title: "Studying",
     description:
-      "I'm learning React for the Frontend and I do enjoy using Corel Draw, Adobe software as Illustrator, Premiere, Lightroom & Photoshop!",
-    link: "https://www.instagram.com/driftdisenos/",
+      " I've graduated from a University Programming Degree at UTN Mar del Plata with an 8.7 grade, but I keep on learning, as most of IT gang does.",
+    link: "https://mdp.utn.edu.ar/tecnicatura/tecnico_universitario_en_programacion/",
   },
   {
-    title: "Photographing + Filmmaking",
+    title: "Leaving my PC",
     description:
-      "Photographing or filming for any occasion are things I used to do as a hobby, now I do it for money but I hope to take it up again as 'just-a hobby' soon :)",
+      "To go to the gym, drinking mate at the coast, taking pictures of cars, learning car mechanics and watching series.",
     link: "https://www.instagram.com/_fotosporquesi/",
   },
 ];

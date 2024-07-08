@@ -31,7 +31,7 @@ const Contact = () => {
   const [done, setDone] = useState(false);
 
   return (
-    <section id="contact" className="py-16 lg:section">
+    <section id="contact" className="py-11 lg:pt-48 lg:pb-24">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           {/* text */}
