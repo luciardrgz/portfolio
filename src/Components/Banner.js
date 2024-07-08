@@ -1,12 +1,12 @@
 import React from "react";
-import Image from "../assets/avatar.svg";
+import Image from "../assets/perfil.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaFileDownload } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import useMediaQuery from "../useMediaQuery.js";
 import { Link } from "react-scroll";
-import { fadeIn } from "../variants";
+import { fadeIn } from "../variants.js";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
@@ -21,7 +21,7 @@ const Banner = () => {
 
   return (
     <section
-      className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
+      className="flex h-screen items-center max-sm:mt-[50%]"
       id="home"
       ref={ref}
     >
@@ -36,7 +36,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="text-[55px] font-bold leading-[0.8] lg:text-[70px]"
             >
-              LUCÍA <span>RODRIGUEZ</span>
+              LUCÍA RODRIGUEZ
             </motion.h1>
 
             <motion.div
@@ -75,7 +75,7 @@ const Banner = () => {
                 <div>
                   <div className="text-[40px] font-tertiary text-gradient mb-2">
                     {inView ? (
-                      <CountUp start={0} end={22} duration={1} />
+                      <CountUp start={0} end={23} duration={1} />
                     ) : null}
                   </div>
                   <div className="font-primary text-sm tracking-[2px]">
@@ -94,7 +94,7 @@ const Banner = () => {
 
                 <div>
                   <div className="text-[40px] font-tertiary text-gradient mb-2">
-                    {inView ? <CountUp start={0} end={2} duration={1} /> : null}
+                    {inView ? <CountUp start={0} end={3} duration={1} /> : null}
                   </div>
                   <div className="font-primary text-sm tracking-[2px]">
                     years <br /> coding
@@ -178,7 +178,7 @@ const Banner = () => {
             variants={fadeIn("down", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            className="lg:flex flex-1 max-w-[320px] lg:max-w-[482px] shadow-lg"
+            className="lg:flex flex-1 max-w-[30rem] mb-10 shadow-lg"
           >
             <img src={Image} alt="" />
           </motion.div>
